@@ -1,0 +1,9 @@
+<h1>{{title}}</h1>
+<table class="people">
+  <tr *ngFor="let data of peopleArr.data; index as id">
+    <th>{{data.id}}</th>
+    <th>{{data.firstname}}</th>
+    <th>{{data.lastname}}</th>
+    <button (click)="deleteById(id)">Удалить</button>
+  </tr>
+</table>
